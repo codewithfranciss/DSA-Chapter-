@@ -49,5 +49,14 @@ class UnsortedArray{
   }
 }
 
-
+//example of how to use the static array class
+const arr = new UnsortedArray(5)
+arr.insert(10)
+arr.insert(20)
+arr.insert(30)
+console.log(arr.display()) // 10 20 30
+console.log(arr.search(20)) // 1
+arr.delete(20)
+console.log(arr.display()) // 10 30
+console.log(arr.search(20)) // -1
 
