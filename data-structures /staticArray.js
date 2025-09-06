@@ -11,7 +11,7 @@ class UnsortedArray{
 }
 //instering an element into the array 
     insert(value){
-	if(this.size >= maxSize){
+	if(this.size >= this.maxSize){
         throw new Error("Array is full")
 	}
 	this.array[this.size] = value;
@@ -26,13 +26,14 @@ class UnsortedArray{
 	for(let j = i; j<this.size-1; j++){
 		this.array[j] = this.array[j+1]
 	}
+    this.size--
 	return true
 	 }
 	}
 	 return false   
    }
   search(value){
-	for(let i = 0; i< this.size++; i++){
+	for(let i = 0; i< this.size; i++){
 	if( this.array[i] == value ){
 		return i;
 	}
@@ -40,11 +41,13 @@ class UnsortedArray{
 	  return -1;
   }
   display(){
-	let result;
+	let result = "";
   	for(let i = 0; i<this.size++; i++){
 	result += this.array[i] + ""
 	}
-	return result;
+	return result.trim();
   }
 }
+
+
 
