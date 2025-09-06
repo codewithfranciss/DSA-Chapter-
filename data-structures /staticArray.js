@@ -42,8 +42,8 @@ class UnsortedArray{
   }
   display(){
 	let result = "";
-  	for(let i = 0; i<this.size++; i++){
-	result += this.array[i] + ""
+  	for(let i = 0; i<this.size; i++){
+	result += this.array[i] + " "
 	}
 	return result.trim();
   }
@@ -60,3 +60,4 @@ arr.delete(20)
 console.log(arr.display()) // 10 30
 console.log(arr.search(20)) // -1
 
+ 
