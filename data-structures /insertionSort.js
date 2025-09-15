@@ -1,4 +1,4 @@
-// insertion sort works with sorting the elements while comparing the previous parsed array to put the elements in correct place. It is similar to how you sort playing cards in your hand.
+/* insertion sort works with sorting the elements while comparing the previous parsed array to put the elements in correct place. It is similar to how you sort playing cards in your hand. */
 
 //[4, 3, 2, 10, 12, 1, 5, 6]
 function insertionSort(arr) {
