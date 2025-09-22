@@ -28,7 +28,7 @@ class LinkedList {
 	}
 	this.length++
 	}
-
+//add an element to the beginning of the list
 	prepend(value){
         
 	const newNode = new Node(value);
@@ -45,7 +45,7 @@ class LinkedList {
 	
 	this.length++
 	}
-
+//print the list
 	printList(){
 	
 	let current = this.head;
@@ -67,3 +67,4 @@ myList.prepend(5);   // List: 5 -> 10 -> 20
 myList.append(30);   // List: 5 -> 10 -> 20 -> 30
 
 myList.printList();  // Output: 5 -> 10 -> 20 -> 30
+console.log("Length:", myList.length); // Output: Length: 4
